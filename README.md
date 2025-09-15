@@ -1,2 +1,2 @@
 # mysite
-Django personal blog
+Django personal blog review
