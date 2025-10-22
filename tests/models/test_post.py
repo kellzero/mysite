@@ -1,6 +1,16 @@
+import os
+import sys
+
+import django
 import pytest
 
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
+django.setup()
+
 from blog.factories import PostFactory
+
 
 @pytest.fixture
 
